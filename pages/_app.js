@@ -15,7 +15,7 @@ const theme = {
 import '../styles/globals.css'
 
 export default function MyApp({ Component, pageProps }) {
-    const getLayout = Component.getLayout || ((page) => page)
+    const getLayout = Component.getLayout || ((page) => page);
     return getLayout(
         <ThemeProvider theme={theme}>
             <Layout>
