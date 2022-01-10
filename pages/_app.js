@@ -2,15 +2,7 @@ import React from "react";
 import Layout from "../components/layouts/mainLayout"
 
 import {ThemeProvider} from 'styled-components';
-
-const theme = {
-    colors: {
-        primary: '#036'
-    },
-    widths: {
-        contentList: '800px'
-    }
-}
+import theme from '../components/acmTheme'
 
 import '../styles/globals.css'
 
