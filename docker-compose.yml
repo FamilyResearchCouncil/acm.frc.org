@@ -2,7 +2,7 @@ version: "3"
 services:
 
   frontend:
-    image: "node"
+    image: node:lts
     restart: unless-stopped
     volumes:
       - "./:/var/www/html"
