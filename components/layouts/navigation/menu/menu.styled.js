@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const StyledMenu = styled.nav`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: right;
   background: ${({ theme }) => theme.colors.transparentBlack};
-  height: 100vh;
+  width: 100vw;
   text-align: left;
-  padding: 2rem;
+  padding: 2rem 6rem 2rem 2rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -27,6 +27,7 @@ export const StyledMenu = styled.nav`
     color: ${({ theme }) => theme.colors.isWhite};
     text-decoration: none;
     transition: color 0.3s linear;
+    margin-left: 4rem;
     
     @media (max-width: ${({ theme }) => theme.widths.mobileMenu}) {
       font-size: 1.5rem;

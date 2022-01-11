@@ -1,5 +1,5 @@
-import Header from './fullWidthComponents/header'
-import Footer from './fullWidthComponents/footer'
+import Header from './header'
+import Footer from './footer'
 
 export default function Layout({ children }) {
     return (

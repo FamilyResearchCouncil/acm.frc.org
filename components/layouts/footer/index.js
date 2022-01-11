@@ -1,7 +1,4 @@
-//import Link from 'next/link';
-
-
-import {StyledDarkBlueSection} from "./darkBlueSection";
+import {StyledDarkBlueSection} from "../fullWidthComponents/darkBlueSection";
 
 let Footer = () => (
     <footer>
