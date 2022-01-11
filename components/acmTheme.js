@@ -9,8 +9,21 @@ export default function acmTheme() {
             transparentBlack: 'rgba(0,0,0,.7)'
         },
         widths: {
+            xlargeMaxWidth: '1100px',
+            largeMaxWidth: '800px',
+            mediumMaxWidth: '600px',
             contentList: '800px',
-            mobileMenu: '576px'
+            mobileMenu: '576px',
+            readingWidth: '80ch'
+        },
+        padding: {
+            sectionPadding: '4rem 2rem'
+        },
+        breakPoints: {
+            small: '480px',
+            medium: '768px',
+            large: '992px',
+            xLarge: '1200px'
         }
     }
 }

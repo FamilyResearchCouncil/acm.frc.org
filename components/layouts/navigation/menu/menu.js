@@ -5,6 +5,9 @@ import { StyledMenu } from './menu.styled';
 
 const Menu = ({ open }) => (
         <StyledMenu open={open}>
+            <Link href="/">
+                <a>HOME</a>
+            </Link>
             <Link href="/about-us">
                 <a>About Us</a>
             </Link>

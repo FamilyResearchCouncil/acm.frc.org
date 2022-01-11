@@ -1,11 +1,15 @@
 //import Link from 'next/link';
 
 
+import {StyledDarkBlueSection} from "./darkBlueSection";
+
 let Footer = () => (
     <footer>
-        <p>
-            &copy;2022 Family Research Council
-        </p>
+        <StyledDarkBlueSection>
+            <center>
+                &copy;2022 Family Research Council
+            </center>
+        </StyledDarkBlueSection>
     </footer>
 );
 

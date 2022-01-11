@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import styled from "styled-components";
-import GoldLink from "../components/buttonAndLinks/goldLink";
+import GoldLink from "../components/subComponents/goldLink";
 
 const WrapperDiv = styled.div`
   display: grid;
