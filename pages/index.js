@@ -1,7 +1,15 @@
 import Head from 'next/head'
 // import Image from 'next/image'
 // import Link from 'next/link';
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Main.module.css'
+import {StyledBannerImage} from "../components/layouts/fullWidthComponents/bannerImage";
+import {StyledGoldSection} from "../components/layouts/fullWidthComponents/goldSection";
+import {StyledReadingSection} from "../components/subComponents/readingTextBlock";
+import {StyledPrimaryBlueSection} from "../components/layouts/fullWidthComponents/primaryBlueSection";
+import {StyledContentContainer} from "../components/subComponents/contentContainer";
+import GoldLink from "../components/subComponents/goldLink";
+import ResourceHub from "../components/layouts/fullWidthComponents/resourceHub";
+import {StyledDarkBlueSection} from "../components/layouts/fullWidthComponents/darkBlueSection";
 
 const Home = () => (
   <>
@@ -10,8 +18,41 @@ const Home = () => (
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className={styles.bannerImageMain}>
+          <StyledBannerImage>
+              <div class={styles.homepageBannerText}>
+                  <h2 className={styles.h2}>WHO WE ARE</h2>
+                  <p>
+                      Our mission is uniting likeminded churches and ministries, across
+                      denominational lines, who share the vision of impacting the culture with
+                      biblical truth.
+                  </p>
+              </div>
+          </StyledBannerImage>
+      </div>
+      <StyledGoldSection>
+          <StyledReadingSection alignment="center">
+              <em>
+                <strong>
+                  WE ARE CREATING A UNIFIED COMMUNITY OF CHURCHES & MINISTRIES WHO WORK
+                  COLLECTIVELY TO BUILD A CULTURE IN WHICH ALL HUMAN LIFE IS VALUED, FAMILIES
+                  FLOURISH, AND RELIGIOUS LIBERTY THRIVES.
+                </strong>
+              </em>
+          </StyledReadingSection>
+      </StyledGoldSection>
+      <StyledPrimaryBlueSection>
+          <StyledContentContainer>
+              <h2 className={styles.h2}>LEARN ABOUT FRC’S ASSOCIATION OF CHURCHES & MINISTRIES</h2>
 
-
+          </StyledContentContainer>
+      </StyledPrimaryBlueSection>
+      <ResourceHub />
+      <StyledDarkBlueSection>
+          <StyledContentContainer>
+              <GoldLink href="/" displayName="JOIN THE ASSOCIATION TODAY FOR THESE ADDITIONAL RESOURCES!" />
+          </StyledContentContainer>
+      </StyledDarkBlueSection>
     </>
 );
 

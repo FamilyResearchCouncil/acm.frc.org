@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledContentContainer = styled.div`
   max-width: 100%;
   margin: 0 auto;
+  position: relative;
   
   @media (min-width: ${({ theme }) => theme.breakPoints.small}) {
     

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Main.module.css";
 import styled from "styled-components";
 import GoldLink from "../components/subComponents/goldLink";
 

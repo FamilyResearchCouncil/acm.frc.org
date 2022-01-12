@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Head from 'next/head'
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Main.module.css";
 import GoldLink from "../components/subComponents/goldLink";
 import ResourceHub from "../components/layouts/fullWidthComponents/resourceHub";
 import { StyledPrimaryBlueSection } from '../components/layouts/fullWidthComponents/primaryBlueSection';
@@ -21,7 +21,7 @@ let Resources = () => (
         {/*<h1 className={styles.title}>Resources</h1>*/}
         <div className={styles.bannerImageAlt}>
             <StyledBannerImage>
-                HELLO THERE!!!
+
             </StyledBannerImage>
         </div>
         <StyledLightBlueSection>
@@ -33,15 +33,17 @@ let Resources = () => (
         </StyledLightBlueSection>
         <StyledPrimaryBlueSection>
             <StyledContentContainer>
-                <GoldLink href="/" displayName="NOT A MEMBER? JOIN NOW!" />
-                <GoldLink href="/" displayName="MEMBER LOGIN" />
+                <div className={styles.gridColumns2}>
+                    <GoldLink href="/" displayName="NOT A MEMBER? JOIN NOW!" />
+                    <GoldLink href="/" displayName="MEMBER LOGIN" />
+                </div>
             </StyledContentContainer>
         </StyledPrimaryBlueSection>
-       <ResourceHub />
+            <ResourceHub />
         <StyledPrimaryBlueSection>
             <StyledContentContainer>
                 <StyledReadingSection>
-                    ADDITIONAL RESOURCES FOR ACM MEMBERS
+                    <h2 className={styles.h2}>ADDITIONAL RESOURCES FOR ACM MEMBERS</h2>
                     <ul>
                         <li>Prayer Ministry and Contacts for your Leadership</li>
                         <li>Annual Briefing in Washington, D.C.</li>

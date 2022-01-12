@@ -8,7 +8,8 @@ export const StyledGoldLink = styled.a`
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
-  padding: 8px 16px;
+  padding: 1rem 1.6rem;
+  border-radius: 8px;
 
   &:hover {
     color: ${({ theme }) => theme.colors.altLightBlue};

@@ -2,6 +2,7 @@ import AffiliateLink from "../../subComponents/affiliateLink";
 import { StyledDarkBlueSection } from "./darkBlueSection";
 import { StyledContentContainer } from "../../subComponents/contentContainer";
 import styled from 'styled-components';
+import styles from "../../../styles/Main.module.css";
 
 const GridDiv = styled.div`
   display: grid;
@@ -25,6 +26,7 @@ const GridDiv = styled.div`
 let ResourceHub = () => (
     <>
         <StyledDarkBlueSection>
+            <h2 className={styles.h2}>RESOURCE HUB FOR PASTORS</h2>
             <StyledContentContainer>
                 <GridDiv>
                     <AffiliateLink href="https://communityimpact.frc.org/" imgageUrl="/img/logos/ci.png"/>
