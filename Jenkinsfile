@@ -22,21 +22,21 @@ node('master') {
             sh "docker build -t familyresearchcouncil/acm:${env.BRANCH_NAME} ."
         }
 
-        stage('setup') {
-            // start the services
-//             sh 'docker-compose up -d'
-        }
-
-        stage('test') {
-//             check status code of http request
-
-//             int status = sh(script: "curl -sLI -w '%{http_code}' localhost:3000 -o /dev/null", returnStdout: true)
+//         stage('setup') {
+//             // start the services
+// //             sh 'docker-compose up -d'
+//         }
 //
-//             if (status != 200 && status != 201) {
-//                 error("Returned status code = $status when calling $url")
-//             }
-
-        }
+//         stage('test') {
+// //             check status code of http request
+//
+// //             int status = sh(script: "curl -sLI -w '%{http_code}' localhost:3000 -o /dev/null", returnStdout: true)
+// //
+// //             if (status != 200 && status != 201) {
+// //                 error("Returned status code = $status when calling $url")
+// //             }
+//
+//         }
 
         stage('deploy') {
 
