@@ -6,7 +6,8 @@ export default function acmTheme() {
             altLightBlue: '#6c97c6',
             primaryGold: '#ddbb2b',
             isWhite: '#ffffff',
-            transparentBlack: 'rgba(0,0,0,.7)'
+            transparentBlack: 'rgba(0,0,0,.7)',
+            mobileTransparentblack: 'rgba(0,0,0,.85)',
         },
         widths: {
             xlargeMaxWidth: '1100px',

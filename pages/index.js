@@ -8,7 +8,7 @@ import {StyledReadingSection} from "../components/subComponents/readingTextBlock
 import {StyledPrimaryBlueSection} from "../components/layouts/fullWidthComponents/primaryBlueSection";
 import {StyledContentContainer} from "../components/subComponents/contentContainer";
 import GoldLink from "../components/subComponents/goldLink";
-import ResourceHub from "../components/layouts/fullWidthComponents/resourceHub";
+import ResourceHub from "../components/subComponents/resourceHub";
 import {StyledDarkBlueSection} from "../components/layouts/fullWidthComponents/darkBlueSection";
 
 const Home = () => (

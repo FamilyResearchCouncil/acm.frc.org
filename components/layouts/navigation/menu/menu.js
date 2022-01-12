@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { bool, func } from 'prop-types';
 import { StyledMenu } from './menu.styled';
-// import { GoldLink } from '../../../buttonAndLinks/goldLink'
 
 const Menu = ({ open }) => (
         <StyledMenu open={open}>

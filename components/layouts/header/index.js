@@ -5,7 +5,7 @@ import { useOnClickOutside } from '../../hooks/useOnClickOutside';
 import styles from './Header.module.css'
 
 let Header = () => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     const node = useRef();
     useOnClickOutside(node, () => setOpen(false));
     return (

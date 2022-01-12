@@ -1,8 +1,8 @@
-import AffiliateLink from "../../subComponents/affiliateLink";
-import { StyledDarkBlueSection } from "./darkBlueSection";
-import { StyledContentContainer } from "../../subComponents/contentContainer";
+import AffiliateLink from "./affiliateLink";
+import { StyledDarkBlueSection } from "../layouts/fullWidthComponents/darkBlueSection";
+import { StyledContentContainer } from "./contentContainer";
 import styled from 'styled-components';
-import styles from "../../../styles/Main.module.css";
+import styles from "../../styles/Main.module.css";
 
 const GridDiv = styled.div`
   display: grid;

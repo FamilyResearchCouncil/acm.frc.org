@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import Head from 'next/head'
 import styles from "../styles/Main.module.css";
 import GoldLink from "../components/subComponents/goldLink";
-import ResourceHub from "../components/layouts/fullWidthComponents/resourceHub";
+import ResourceHub from "../components/subComponents/resourceHub";
 import { StyledPrimaryBlueSection } from '../components/layouts/fullWidthComponents/primaryBlueSection';
 import { StyledDarkBlueSection } from '../components/layouts/fullWidthComponents/darkBlueSection';
 import { StyledLightBlueSection } from '../components/layouts/fullWidthComponents/lightBlueSection';
 import { StyledBannerImage } from "../components/layouts/fullWidthComponents/bannerImage";
 import { StyledReadingSection } from '../components/subComponents/readingTextBlock';
 import { StyledContentContainer } from '../components/subComponents/contentContainer';
+import ResourceList from "../components/subComponents/resourceList";
 
 
 let Resources = () => (
@@ -44,16 +45,7 @@ let Resources = () => (
             <StyledContentContainer>
                 <StyledReadingSection>
                     <h2 className={styles.h2}>ADDITIONAL RESOURCES FOR ACM MEMBERS</h2>
-                    <ul>
-                        <li>Prayer Ministry and Contacts for your Leadership</li>
-                        <li>Annual Briefing in Washington, D.C.</li>
-                        <li>Regularly scheduled virtual meetings and updates</li>
-                        <li>Complimentary Community Impact Team start-up materials and leader training.</li>
-                        <li>Crisis Response Team for cancel-culture attacks on your ministry to provide support.</li>
-                        <li>Your church/ministry listed within our network & shared as a recommended ministry.</li>
-                        <li>Update emails highlighting leading stories from Washington, D.C.</li>
-                        <li>Invitation-Only events</li>
-                    </ul>
+                    <ResourceList />
                 </StyledReadingSection>
             </StyledContentContainer>
         </StyledPrimaryBlueSection>
