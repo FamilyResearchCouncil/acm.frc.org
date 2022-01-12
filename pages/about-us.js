@@ -14,7 +14,7 @@ let AboutUs = () => (
     <>
         <WrapperDiv>
             <h1 className={styles.title}>About Us</h1>
-            <GoldLink href="/" displayName="READ OUR STATEMENT OF FAITH" />
+            <GoldLink href="/" displayName="READ OUR STATEMENT OF FAITH!" />
         </WrapperDiv>
     </>
 );
