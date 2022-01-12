@@ -24,7 +24,7 @@ node('master') {
 
         stage('setup') {
             // start the services
-            sh 'docker-compose up -d'
+//             sh 'docker-compose up -d'
         }
 
         stage('test') {
