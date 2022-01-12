@@ -64,7 +64,7 @@ let HowToJoin = () => (
         <StyledDarkBlueSection>
             <StyledContentContainer>
                 <div className={styles.gridColumns2}>
-                    <GoldLink href="/" displayName="NOT A MEMBER? JOIN NOW!" />
+                    <GoldLink href="/sign-up" displayName="NOT A MEMBER? JOIN NOW!" />
                     <GoldLink href="/" displayName="MEMBER LOGIN" />
                 </div>
             </StyledContentContainer>

@@ -50,7 +50,7 @@ const Home = () => (
       <ResourceHub />
       <StyledDarkBlueSection>
           <StyledContentContainer>
-              <GoldLink href="/" displayName="JOIN THE ASSOCIATION TODAY FOR THESE ADDITIONAL RESOURCES!" />
+              <GoldLink href="/sign-up" displayName="JOIN THE ASSOCIATION TODAY FOR THESE ADDITIONAL RESOURCES!" />
           </StyledContentContainer>
       </StyledDarkBlueSection>
     </>

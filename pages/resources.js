@@ -35,7 +35,7 @@ let Resources = () => (
         <StyledPrimaryBlueSection>
             <StyledContentContainer>
                 <div className={styles.gridColumns2}>
-                    <GoldLink href="/" displayName="NOT A MEMBER? JOIN NOW!" />
+                    <GoldLink href="/sign-up" displayName="NOT A MEMBER? JOIN NOW!" />
                     <GoldLink href="/" displayName="MEMBER LOGIN" />
                 </div>
             </StyledContentContainer>
@@ -51,7 +51,7 @@ let Resources = () => (
         </StyledPrimaryBlueSection>
         <StyledDarkBlueSection>
             <StyledContentContainer>
-            <GoldLink href="/" displayName="JOIN THE ASSOCIATION TODAY FOR THESE ADDITIONAL RESOURCES!" />
+            <GoldLink href="/sign-up" displayName="JOIN THE ASSOCIATION TODAY FOR THESE ADDITIONAL RESOURCES!" />
             </StyledContentContainer>
         </StyledDarkBlueSection>
     </>
