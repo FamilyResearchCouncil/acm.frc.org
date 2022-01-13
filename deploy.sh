@@ -8,5 +8,13 @@ STACK="acm-$BRANCH_NAME"
 
 test -f "$COMPOSE_FILE" && {
     echo "Deploying stack '$STACK' to the swarm"
-    docker stack deploy --with-registry-auth -c "$COMPOSE_FILE" "$STACK"
+
+    docker stack deploy \
+        # pass registry creds to all nodes
+        --with-registry-auth \
+        # use the compose file to deploy
+        -c "$COMPOSE_FILE" \
+        # the name of the stack
+        "$STACK"
+
 }
