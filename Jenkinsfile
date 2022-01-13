@@ -1,8 +1,6 @@
 #!/usr/bin/env groovy
 node('master') {
     try{
-
-
         stage('env'){
 
             checkout scm
@@ -18,23 +16,23 @@ node('master') {
         }
 
         stage('build'){
-            // build the image
+            // build the image tagged with the current branch name
             sh "docker build -t familyresearchcouncil/acm:${env.BRANCH_NAME} ."
         }
 
 //         stage('setup') {
 //             // start the services
-// //             sh 'docker-compose up -d'
+//             sh 'docker-compose up -d'
 //         }
 //
 //         stage('test') {
-// //             check status code of http request
+//              // check status code of http request
 //
-// //             int status = sh(script: "curl -sLI -w '%{http_code}' localhost:3000 -o /dev/null", returnStdout: true)
-// //
-// //             if (status != 200 && status != 201) {
-// //                 error("Returned status code = $status when calling $url")
-// //             }
+//             int status = sh(script: "curl -sLI -w '%{http_code}' localhost:3000 -o /dev/null", returnStdout: true)
+//
+//             if (status != 200 && status != 201) {
+//                 error("Returned status code = $status when calling $url")
+//             }
 //
 //         }
 
@@ -46,9 +44,8 @@ node('master') {
             // copy the files necessary to deploy the application
             sh "scp deploy.sh docker-compose.*.yml docker01:/docker/containers/acm"
 
-            // tell the swarm to pull down the latest image
+            // run the deploy script, passing the current branch as the argument
             sh "ssh docker01 /docker/containers/acm/deploy.sh ${env.BRANCH_NAME}"
-
 
         }
 
@@ -59,7 +56,7 @@ node('master') {
                     replyTo: 'eab@frc.org'
 
     } finally  {
-        sh 'docker-compose down'
+//         sh 'docker-compose down'
     }
 
 }
