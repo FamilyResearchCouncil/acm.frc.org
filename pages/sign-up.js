@@ -31,8 +31,8 @@ let SignUp = () => (
                 <MinHeightDiv>
                 <h2 className={styles.h2}>WHO ARE YOU?</h2>
                 <div className={styles.gridColumns2}>
-                    <GoldLink href="https://signup.acm.frc.org/" displayName="A CHURCH" />
-                    <GoldLink href="https://signup.acm.frc.org/" displayName="MINISTRY/MINISTER" />
+                    <GoldLink href="https://signup.acm.frc.org/church" displayName="A CHURCH" />
+                    <GoldLink href="https://signup.acm.frc.org/ministry" displayName="MINISTRY OR MINISTER" />
                 </div>
                 </MinHeightDiv>
             </StyledReadingSection>

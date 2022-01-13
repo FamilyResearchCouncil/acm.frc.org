@@ -10,6 +10,7 @@ import {StyledContentContainer} from "../components/subComponents/contentContain
 import GoldLink from "../components/subComponents/goldLink";
 import ResourceHub from "../components/subComponents/resourceHub";
 import {StyledDarkBlueSection} from "../components/layouts/fullWidthComponents/darkBlueSection";
+import VideoContainer from "../components/subComponents/videoContainer";
 
 const Home = () => (
   <>
@@ -44,7 +45,7 @@ const Home = () => (
       <StyledPrimaryBlueSection>
           <StyledContentContainer>
               <h2 className={styles.h2}>LEARN ABOUT FRC’S ASSOCIATION OF CHURCHES & MINISTRIES</h2>
-
+              <VideoContainer />
           </StyledContentContainer>
       </StyledPrimaryBlueSection>
       <ResourceHub />
