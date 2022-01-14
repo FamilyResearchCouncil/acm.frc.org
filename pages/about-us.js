@@ -67,7 +67,7 @@ let AboutUs = () => (
         </StyledPrimaryBlueSection>
         <StyledDarkBlueSection>
             <StyledContentContainer>
-                <GoldLink href="/" displayName="READ OUR STATEMENT OF FAITH" />
+                <GoldLink href="https://www.frc.org/get.cfm?i=LK22A15" displayName="READ OUR STATEMENT OF FAITH" />
             </StyledContentContainer>
         </StyledDarkBlueSection>
         <StyledLightBlueSection>
