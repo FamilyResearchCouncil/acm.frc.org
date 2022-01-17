@@ -4,3 +4,21 @@
     width: 100%;
     z-index: 10;
 }
+
+.logoLink {
+    width: 200px;
+    display: block;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    transition: all .6s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.logoLink img {
+    width: 100%
+}
