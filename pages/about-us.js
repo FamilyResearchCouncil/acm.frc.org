@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/Main.module.css";
-import styled from "styled-components";
 import GoldLink from "../components/subComponents/goldLink";
-import Head from "next/head";
+import HeadTag from "../components/layouts/HeadTag"
 import StaffListing from "../components/subComponents/staffList";
 import TonySignature from "../components/subComponents/tonySignature"
 import {StyledBannerImage} from "../components/layouts/fullWidthComponents/bannerImage";
@@ -12,13 +11,9 @@ import {StyledContentContainer} from "../components/subComponents/contentContain
 import {StyledPrimaryBlueSection} from "../components/layouts/fullWidthComponents/primaryBlueSection";
 import {StyledDarkBlueSection} from "../components/layouts/fullWidthComponents/darkBlueSection";
 
-let AboutUs = () => (
+const AboutUs = () => (
     <>
-        <Head>
-            <title>About Us</title>
-            <meta name="description" content="About FRC's Association of Churches & Ministries" />
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <HeadTag title="About Us" description="About FRC's Association of Churches & Ministries" />
         <div className={styles.bannerImageAlt}>
             <StyledBannerImage>
 

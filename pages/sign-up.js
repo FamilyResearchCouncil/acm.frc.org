@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/Main.module.css";
 import styled from "styled-components";
 import GoldLink from "../components/subComponents/goldLink";
-import Head from "next/head";
+import HeadTag from "../components/layouts/HeadTag"
 import {StyledBannerImage} from "../components/layouts/fullWidthComponents/bannerImage";
 import {StyledReadingSection} from "../components/subComponents/readingTextBlock";
 import {StyledPrimaryBlueSection} from "../components/layouts/fullWidthComponents/primaryBlueSection";
@@ -14,13 +14,9 @@ const MinHeightDiv = styled.div`
   justify-content: center;
 `
 
-let SignUp = () => (
+const SignUp = () => (
     <>
-        <Head>
-            <title>Sign Up</title>
-            <meta name="description" content="Sign Up To Join The Association of Churches And Ministries" />
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <HeadTag title="Sign Up" description="Sign up to join the Association of Churches And Ministries" />
         <div className={styles.bannerImageAlt}>
             <StyledBannerImage>
 

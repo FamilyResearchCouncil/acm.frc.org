@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/Main.module.css";
 import GoldLink from "../components/subComponents/goldLink";
-import Head from "next/head";
+import HeadTag from "../components/layouts/HeadTag"
 import ResourceList from "../components/subComponents/resourceList";
 import { StyledPrimaryBlueSection } from '../components/layouts/fullWidthComponents/primaryBlueSection';
 import {StyledBannerImage} from "../components/layouts/fullWidthComponents/bannerImage";
@@ -10,13 +10,9 @@ import {StyledLightBlueSection} from "../components/layouts/fullWidthComponents/
 import {StyledContentContainer} from "../components/subComponents/contentContainer";
 import {StyledDarkBlueSection} from "../components/layouts/fullWidthComponents/darkBlueSection";
 
-let HowToJoin = () => (
+const HowToJoin = () => (
     <>
-        <Head>
-            <title>How To Join</title>
-            <meta name="description" content="How To Join FRC's Association of Churches & Ministries" />
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <HeadTag title="How To Join" description="How to join the Association of Churches & Ministries" />
         {/*<h1 className={styles.title}>How To Join</h1>*/}
         <div className={styles.bannerImageAlt}>
             <StyledBannerImage>

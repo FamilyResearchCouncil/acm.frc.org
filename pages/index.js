@@ -1,6 +1,4 @@
-import Head from 'next/head'
-// import Image from 'next/image'
-// import Link from 'next/link';
+import HeadTag from "../components/layouts/HeadTag"
 import styles from '../styles/Main.module.css'
 import {StyledBannerImage} from "../components/layouts/fullWidthComponents/bannerImage";
 import {StyledGoldSection} from "../components/layouts/fullWidthComponents/goldSection";
@@ -14,11 +12,7 @@ import VideoContainer from "../components/subComponents/videoContainer";
 
 const Home = () => (
   <>
-      <Head>
-        <title>Association Of Churches And Ministries</title>
-        <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <HeadTag title="Association Of Churches And Ministries" description="FRC's Association of Churches & Ministries" />
       <div className={styles.bannerImageMain}>
           <StyledBannerImage>
               <div class={styles.homepageBannerText}>

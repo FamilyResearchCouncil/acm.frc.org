@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Head from 'next/head'
+import HeadTag from "../components/layouts/HeadTag"
 import styles from "../styles/Main.module.css";
 import GoldLink from "../components/subComponents/goldLink";
 import ResourceHub from "../components/subComponents/resourceHub";
@@ -12,13 +12,9 @@ import { StyledContentContainer } from '../components/subComponents/contentConta
 import ResourceList from "../components/subComponents/resourceList";
 
 
-let Resources = () => (
+const Resources = () => (
     <>
-        <Head>
-            <title>Resources</title>
-            <meta name="description" content="Resources for pastors" />
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <HeadTag title="Resources" description="Resources for pastors" />
         {/*<h1 className={styles.title}>Resources</h1>*/}
         <div className={styles.bannerImageAlt}>
             <StyledBannerImage>
