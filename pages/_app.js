@@ -6,22 +6,12 @@ import { useEffect } from 'react'
 import theme from '../components/acmTheme'
 import '../styles/globals.css'
 
-
 // log the pageview with their URL
 const pageview = (url) => {
-    console.log("page change");
     window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
         page_path: url,
     })
 }
-
-// // log specific events happening.
-// const event = ({ action, params }) => {
-//     console.log("event");
-//     window.gtag('event', action, params)
-// }
-
-
 
 export default function MyApp({ Component, pageProps }) {
     const getLayout = Component.getLayout || ((page) => page);
