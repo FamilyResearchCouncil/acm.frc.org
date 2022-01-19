@@ -8,7 +8,7 @@ const HeadTag = (props) => (
             <link rel="icon" href="/favicon.ico" />
             <script
                 async
-                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+                src={`https://www.googletagmanager.com/gtag/js?id=G-6Q7XHZNG02`}
             />
             <script
                 dangerouslySetInnerHTML={{
