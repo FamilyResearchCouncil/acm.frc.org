@@ -22,7 +22,7 @@ let Header = () => {
         <header ref={node} className={styles.header}>
             <Link href="/">
                 <a className={` ${styles.logoLink} ${ hideLogo ? styles.hidden : "" }`}>
-                    <img src="/img/ACM_templogo.png" alt="FRC Association Of Churches And Ministries" />
+                    <img src="/img/ACM_logo_white.png" alt="FRC Association Of Churches And Ministries" />
                 </a>
             </Link>
             <Burger open={open} setOpen={setOpen} />
