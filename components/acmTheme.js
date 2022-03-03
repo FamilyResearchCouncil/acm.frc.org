@@ -18,7 +18,8 @@ export default function acmTheme() {
             readingWidth: '80ch'
         },
         padding: {
-            sectionPadding: '4rem 2rem'
+            sectionPadding: '4rem 2rem',
+            smallPadding: '1rem'
         },
         breakPoints: {
             small: '480px',
