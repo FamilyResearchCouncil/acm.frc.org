@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 const HeadTag = (props) => (
     <>
@@ -6,22 +7,21 @@ const HeadTag = (props) => (
             <title>{props.title}</title>
             <meta name="description" content={props.description} />
             <link rel="icon" href="/favicon.ico" />
-            <script
-                async
-                src={`https://www.googletagmanager.com/gtag/js?id=G-6Q7XHZNG02`}
+            <Script
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+                strategy="afterInteractive"
             />
-            <script
-                dangerouslySetInnerHTML={{
-                    __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-6Q7XHZNG02', {
-              page_path: window.location.pathname,
-            });
-          `,
-                }}
-            />
+            <Script>
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){window.dataLayer.push(arguments);}
+                    gtag('js', new Date());
+        
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',, {
+                      page_path: window.location.pathname,
+                    });
+                `}
+            </Script>
         </Head>
     </>
 );
