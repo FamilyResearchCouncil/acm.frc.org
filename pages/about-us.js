@@ -10,6 +10,7 @@ import {StyledLightBlueSection} from "../components/layouts/fullWidthComponents/
 import {StyledContentContainer} from "../components/subComponents/contentContainer";
 import {StyledPrimaryBlueSection} from "../components/layouts/fullWidthComponents/primaryBlueSection";
 import {StyledDarkBlueSection} from "../components/layouts/fullWidthComponents/darkBlueSection";
+import {StyledDarkBlueSection} from "../components/layouts/fullWidthComponents/darkBlueSection";
 
 const AboutUs = () => (
     <>
