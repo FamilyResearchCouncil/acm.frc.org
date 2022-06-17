@@ -12,7 +12,7 @@ export const StyledBannerImage = styled.section`
   padding: 4rem;
   align-items: center;
   justify-items: center;
-  
+  background: rgba(0, 0, 0, 0.25)
 `;
 
 // ../images/${props.imageName}
