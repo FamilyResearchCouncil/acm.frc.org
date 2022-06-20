@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import theme from '../components/acmTheme'
 import '../styles/globals.css'
+import Script from "next/script";
 
 // log the pageview with their URL
 const pageview = (url) => {
@@ -34,6 +35,20 @@ export default function MyApp({ Component, pageProps }) {
 
     return getLayout(
         <ThemeProvider theme={theme}>
+            <Script
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+                strategy="afterInteractive"
+            />
+            <Script>
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                      page_path: window.location.pathname,
+                    });
+                `}
+            </Script>
             <Layout>
                 <Component {...pageProps} />
             </Layout>

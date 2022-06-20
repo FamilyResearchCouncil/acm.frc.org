@@ -35,10 +35,10 @@ const StaffListing = () => (
         <ExecGrid>
             <StaffLink href="https://www.frc.org/tony-perkins" imgageUrl="/img/headshots/tony-perkins.jpg" staffName="Tony Perkins"/>
             <StaffLink href="https://www.frc.org/biography/william-boykin" imgageUrl="/img/headshots/general-boykin.jpg" staffName="Gen. Jerry Boykin"/>
-            <StaffLink href="https://www.frc.org/staff" imgageUrl="/img/headshots/mark-harris.jpg" staffName="Mark Harris"/>
+            <StaffLink href="/" imgageUrl="/img/headshots/mark-harris.jpg" staffName="Mark Harris"/>
             <StaffLink href="https://www.frc.org/randy-wilson" imgageUrl="/img/headshots/randy-wilson.jpg" staffName="Randy Wilson"/>
-            <StaffLink href="https://www.frc.org/staff" imgageUrl="/img/headshots/tim-throckmorton.jpg" staffName="Tim Throckmorton"/>
-            <StaffLink href="https://www.frc.org/staff" imgageUrl="/img/headshots/dean-nelson.jpg" staffName="Dean Nelson"/>
+            <StaffLink href="/" imgageUrl="/img/headshots/tim-throckmorton.jpg" staffName="Tim Throckmorton"/>
+            <StaffLink href="/" imgageUrl="/img/headshots/dean-nelson.jpg" staffName="Dean Nelson"/>
         </ExecGrid>
         {/*<br /><br /><br />*/}
         {/*<StaffGrid>*/}
